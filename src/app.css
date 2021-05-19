@@ -1,0 +1,129 @@
+@font-face {
+	font-family: 'Inter';
+	font-weight: 100 900;
+	font-display: swap;
+	src: url('/fonts/Inter.woff2');
+}
+@font-face {
+	font-family: 'Fira Code';
+	font-weight: 300 700;
+	font-display: swap;
+	font-style: normal;
+	src: url('/fonts/FiraCode.woff2');
+}
+
+:root {
+	--lightest: hsl(210, 10%, var(--lightness-lightest));
+	--lighter: hsl(210, 10%, var(--lightness-lighter));
+	--light: hsl(210, 10%, var(--lightness-light));
+	--strong: hsl(210, 10%, var(--lightness-strong));
+	--stronger: hsl(210, 10%, var(--lightness-stronger));
+	--strongest: hsl(210, 10%, var(--lightness-strongest));
+
+	--primary-light: hsl(180, 100%, 50%);
+	--primary: hsl(210, 100%, 50%);
+	--primary-dark: hsl(225, 100%, 50%);
+
+	--width-prose: 60ch;
+
+	--font-family-sans: 'Inter', sans-serif;
+	--font-family-mono: 'Fira Code', monospace;
+
+	--line-height-none: 1;
+	--line-height-tight: 1.25;
+	--line-height-base: 1.5;
+	--line-height-prose: 1.625;
+	--line-height-loose: 2;
+}
+
+@media (max-width: 640px) {
+	:root {
+		--font-xs: 8pt;
+		--font-sm: 10pt;
+		--font-base: 12pt;
+		--font-lg: 14pt;
+		--font-xl: 16pt;
+		--font-2xl: 20pt;
+		--font-3xl: 24pt;
+		--font-4xl: 28pt;
+	}
+}
+@media (min-width: 640px) {
+	:root {
+		--font-xs: 10pt;
+		--font-sm: 12pt;
+		--font-base: 14pt;
+		--font-lg: 16pt;
+		--font-xl: 18pt;
+		--font-2xl: 24pt;
+		--font-3xl: 28pt;
+		--font-4xl: 36pt;
+	}
+}
+
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: 'Inter', sans-serif;
+	font-size: 12pt;
+	line-height: 1.5;
+	color: var(--stronger);
+	background-color: var(--lightest);
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	margin: 0 0 1em;
+	color: var(--strongest);
+	font-size: var(--font-4xl);
+	font-weight: 800;
+	line-height: 1.2;
+}
+
+h2 {
+	margin: 2.5rem 0 1rem;
+	color: var(--strongest);
+	font-size: var(--font-3xl);
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+h3 {
+	margin: 2rem 0 1rem;
+	color: var(--strongest);
+	font-size: var(--font-2xl);
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+p {
+	margin: 0;
+	font-size: var(--font-base);
+	max-width: var(--width-prose);
+	line-height: var(--line-height-prose);
+}
+@media (min-width: 640px) {
+	p {
+		font-size: 14pt;
+	}
+}
+
+strong {
+	color: var(--strongest);
+	font-weight: 500;
+}
+
+a {
+	font-size: inherit;
+	color: inherit;
+	text-decoration: none;
+}
+
+svg {
+	width: inherit;
+	height: inherit;
+}

@@ -1,0 +1,8 @@
+:root {
+	--lightness-lightest: 100%;
+	--lightness-lighter: 80%;
+	--lightness-light: 60%;
+	--lightness-strong: 40%;
+	--lightness-stronger: 20%;
+	--lightness-strongest: 0%;
+}

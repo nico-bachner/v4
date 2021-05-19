@@ -1,0 +1,21 @@
+@media (prefers-color-scheme: light) {
+	:root {
+		--lightness-lightest: 100%;
+		--lightness-lighter: 80%;
+		--lightness-light: 60%;
+		--lightness-strong: 40%;
+		--lightness-stronger: 20%;
+		--lightness-strongest: 0%;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--lightness-lightest: 0%;
+		--lightness-lighter: 20%;
+		--lightness-light: 40%;
+		--lightness-strong: 60%;
+		--lightness-stronger: 80%;
+		--lightness-strongest: 100%;
+	}
+}

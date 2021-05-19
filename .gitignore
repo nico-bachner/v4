@@ -1,0 +1,11 @@
+# Dependencies
+pnpm-lock.yaml
+node_modules/
+
+# Build Output
+.svelte-kit/
+build/
+functions/
+
+# Miscellaneous
+.DS_Store
