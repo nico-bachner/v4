@@ -7,12 +7,9 @@
 		{ title: 'Dark', value: 'dark' },
 	];
 
-	let selected: Theme;
-
 </script>
 
-<!-- svelte-ignore a11y-no-onchange -->
-<select bind:value={selected} on:change={() => theme.set(selected)}>
+<select bind:value={$theme}>
 	{#each themes as theme}
 		<option value={theme.value}>
 			{theme.title}
