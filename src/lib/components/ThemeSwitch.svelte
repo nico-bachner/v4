@@ -10,9 +10,9 @@
 </script>
 
 <select bind:value={$theme}>
-	{#each themes as theme}
-		<option value={theme.value}>
-			{theme.title}
+	{#each themes as { value, title }}
+		<option {value}>
+			{title}
 		</option>
 	{/each}
 </select>
